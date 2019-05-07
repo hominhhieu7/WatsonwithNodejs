@@ -19,9 +19,7 @@ exports.getMessage = body => {
                     reject(err);
                 }
                 else {
-                    console.log(response.output.text);
-                    
-                    resolve(response.output.text);
+                    resolve(response);
                 }
             }
         );
